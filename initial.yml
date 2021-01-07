@@ -10,7 +10,7 @@ steps:
       if [ -z "$${treesha}" ]; then
         echo "+++ No .buildkite/; using fallback repository"
         rm -rf .buildkite
-        git clone "https://github.com/rails/buildkite-config" .buildkite
+        git clone "https://github.com/bjfish/buildkite-config" .buildkite
         rm -rf .buildkite/.git
         sh -c "$$PIPELINE_COMMAND"
       elif [ "$${#treesha}" -lt 40 ]; then

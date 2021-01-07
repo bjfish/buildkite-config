@@ -71,6 +71,8 @@ available_tags_for_image("ruby").
   end
 end
 
+RUBIES = ["ruby:2.7"] # Limit versions that are tested
+
 ONE_RUBY = RUBIES.last || SOFT_FAIL.last
 
 MASTER_RUBY = "rubylang/ruby:master-nightly-bionic"
